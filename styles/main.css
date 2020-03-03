@@ -1,0 +1,65 @@
+.clock {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 50%;
+  box-sizing: border-box; }
+
+.clock-center {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3; }
+
+.min-hand {
+  width: 10px;
+  height: 150px;
+  background: grey;
+  border-radius: 10px;
+  position: absolute;
+  top: 22%;
+  left: 51%;
+  z-index: 2;
+  -webkit-animation-name: circle;
+          animation-name: circle;
+  -webkit-animation-duration: 3600s;
+          animation-duration: 3600s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  transform-origin: bottom; }
+
+.sec-hand {
+  width: 10px;
+  height: 230px;
+  background: black;
+  border-radius: 10px;
+  position: absolute;
+  top: 6%;
+  left: 51%;
+  z-index: 1;
+  -webkit-animation-name: circle;
+          animation-name: circle;
+  -webkit-animation-duration: 60s;
+          animation-duration: 60s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  transform-origin: bottom; }
+
+@-webkit-keyframes circle {
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes circle {
+  100% {
+    transform: rotate(360deg); } }
+
+/*# sourceMappingURL=main.css.map */
